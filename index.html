@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>портфолио web-разработчик</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>портфолио web-разработчик</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <header>
-    <nav>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Этапы работ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
       <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="#">Обо мне</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Портфолио</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Этапы работ</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Обратная связь</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:+79237777777">8 923 777-77-77</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:alexdev@gmail.com"
+            >alexdev@gmail.com</a
+          >
+        </li>
       </ul>
-    </nav>
-    <ul class="nav">
-      <li class="nav-item"><a class="nav-link" href="tel:+79237777777">8 923 777-77-77</a></li>
-      <li class="nav-item"><a class="nav-link" href="mailto:alexdev@gmail.com">alexdev@gmail.com</a></li>
-    </ul>
-  </header>
+    </header>
 
-  <main>
-    <div>
-      <p class="name">Александр Антропов</p>
-      <h1 class="title-h1">web-разработчик</h1>
-    </div>
-  </main>
+    <main>
+      <div>
+        <p class="name">Александр Антропов</p>
+        <h1 class="title-h1">web-разработчик</h1>
+      </div>
+    </main>
 
-  <img  class="photo" src="img/photo.png" alt="фото">
+    <img class="photo" src="img/photo.png" alt="фото" />
 
-  <footer>
+    <footer></footer>
 
-  </footer>
-
-  <form action="">
-    <div>
-      <label for="Имя"></label>
-      <input type="text" placeholder="Введите ваше имя">
-    </div>
-    <div>
-      <label for="Фамилия"></label>
-      <input type="text" value="Блок">
-    </div>
-    <div>
-      <label for="">Email</label>
-      <input type="email">
-    </div>
-    <div>
-      <label for="Опишите суть проблемы"></label>
-      <textarea name="" cols="30" rows="10" placeholder="Введите ваш текст"></textarea>
-    </div>
-    <button type="submit">Отправить</button>
-
-  </form>
-</body>
-
+    <form action="">
+      <div>
+        <label for="Имя"></label>
+        <input type="text" placeholder="Введите ваше имя" />
+      </div>
+      <div>
+        <label for="Фамилия"></label>
+        <input type="text" value="Блок" />
+      </div>
+      <div>
+        <label for="">Email</label>
+        <input type="email" />
+      </div>
+      <div>
+        <label for="Опишите суть проблемы"></label>
+        <textarea
+          name=""
+          cols="30"
+          rows="10"
+          placeholder="Введите ваш текст"
+        ></textarea>
+      </div>
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
 </html>
