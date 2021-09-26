@@ -1,5 +1,106 @@
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.darck {
+  background-color: #232326;
+  color: #f3f2f0;
+}
+
+.darck .nav_link {
+  color: #f3f2f0;
+}
+
+.darck .circle circle {
+  fill: #d40000;
+}
+
+.darck .triangle path {
+  fill: #fff;
+}
+
+.light {
+  background-color: #f3f2f0;
+  color: #010101;
+}
+
+.light .nav_link {
+  color: #010101;
+}
+
+.light .circle circle {
+  fill: #fff;
+}
+
+.light .triangle path {
+  fill: #d40000;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+
+.nav {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  font-weight: 400;
+}
+
+.nav_item {
+  padding: 0 16px;
+}
+
+.nav_item:first-child {
+  padding-left: 0;
+}
+
+.nav_item:last-child {
+  padding-right: 0;
+}
+
+.nav_link {
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  color: #d40000;
+}
+
+.nav_info .nav_item{
+  position: relative; 
+}
+
+.nav_info .nav_item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 24px;
+  left: 0;
+  top: calc(50% - 12px);
+  background-color: rgba(243,242,240,0.5);
+}
+
+.nav_info .nav_item:first-child::before {
+  display: none;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  margin-bottom: 120px;
 }
 
 .name {
@@ -13,7 +114,57 @@ body {
   text-transform: uppercase;
 }
 
-.nav {
-  font-size: 14px;
-  font-weight: 400;
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  margin-top: 100px;
+}
+
+.project {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.project-img {
+  width: 16px;
+  height: 12px;
+  display: block;
+  background-image: url(../img/arrow.svg);
+  margin-left: 15px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-item {
+  flex: 0 0 24%;
+}
+
+.title-h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.description {
+  line-height: 150%;
+  opacity: 0.8;
+}
+
+.circle_main {
+  width: 253px;
+  height: 253px;
+}
+
+.circle_nav {
+  width: 106px;
+  height: 106px;
 }
