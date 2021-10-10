@@ -69,14 +69,14 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 65px;
+  padding-top: 38px;
+  padding-bottom: 61px;
 }
 
 .nav {
   display: flex;
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -280,7 +280,7 @@ body {
 }
 
 .section-about {
-  padding-top: 108px;
+  padding-top: 114px;
 }
 
 .about {
@@ -296,14 +296,13 @@ body {
   line-height: 150%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 60px;
-  padding-left: 9px;
+  padding-top: 57px;
 }
 
 .about-description {
   grid-column: 3/5;
   grid-row: 1/2;
-  padding: 62px 4px 62px 18px;
+  padding: 58px 10px 62px 11px;
   font-size: 28px;
   line-height: 150%;
   opacity: 0.8;
@@ -317,25 +316,25 @@ body {
 .about-01 {
   grid-column: 3/4;
   grid-row: 2/3;
-  padding: 48px 4px 35px 18px;
+  padding: 43px 10px 35px 10px;
 }
 
 .about-02 {
   grid-column: 4/5;
   grid-row: 2/3;
-  padding: 47px 5px 35px 22px;
+  padding: 43px 10px 24px 15px;
 }
 
 .about-03 {
   grid-column: 3/4;
   grid-row: 3/4;
-  padding: 13px 18px;
+  padding: 14px 12px;
 }
 
 .about-04 {
   grid-column: 4/5;
   grid-row: 3/4;
-  padding: 13px 11px 13px 23px;
+  padding: 14px 14px 10px 15px;
 }
 
 .section-steps {
@@ -347,8 +346,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 13px;
   line-height: 150%;
 }
 
@@ -357,7 +356,7 @@ body {
 }
 
 .steps-title span {
-  margin-right: 47px;
+  margin-right: 40px;
 }
 
 .steps-description {
@@ -374,7 +373,9 @@ body {
   margin-bottom: 162px;
   position: relative;
   z-index: 1;
+  letter-spacing: 0;
 }
+
 
 .gradient {
   background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
@@ -388,8 +389,8 @@ body {
   position: absolute;
   width: 465px;
   height: 465px;
-  top: -341px;
-  left: 357px;
+  top: -340px;
+  left: 346px;
 }
 
 #tabs {
@@ -400,14 +401,16 @@ body {
   font-size: 16px;
   display: flex;
   list-style-type: none;
-  padding-left: 12px;
+  padding-left: 0;
   margin: 0;
   position: absolute;
-  top: -58px;
+  top: -79px;
 }
 
 .nav-tabs-item {
   margin-right: 76px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .nav-tabs-link {
@@ -417,7 +420,11 @@ body {
   text-decoration: none;
 }
 
-.nav-tabs-link.active {
+.nav-tabs-link:focus {
+  outline: none;
+}
+
+.nav-tabs-item.ui-state-active .nav-tabs-link {
   color: #f3f2f0;
   border-bottom: 2px solid #f3f2f0;
 }
@@ -479,4 +486,52 @@ body {
   overflow: hidden;
   width: 100%;
   height: 315px;
+}
+
+.section-advantages {
+  padding-top: 170px;
+}
+
+.advantages-text {
+  font-size: 28px;
+  line-height: 150%;
+  max-width: 870px;
+}
+
+.advantages {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  grid-gap: 77px 20px;
+  border-top: 1px solid #f3f2f0;
+  padding-top: 80px;
+  margin-top: 78px;
+}
+
+.advantages-item {
+  display: flex;
+  align-items: center;
+}
+
+.advantages-image {
+  margin-right: 40px;
+}
+
+.advantages-image svg {
+  width: 40px;
+  height: 40px;
+}
+
+.advantages-image path {
+  fill: #f3f2f0;
+}
+
+.advantages .title-h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.advantages-description {
+  line-height: 150%;
+  opacity: 0.8;
+  margin-bottom: 0;
 }
